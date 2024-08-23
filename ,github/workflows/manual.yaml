@@ -1,0 +1,17 @@
+name: Manual
+
+on: workflow_dispatch
+
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludo sencillo
+        run: echo "Hola NOC 2"
+  depedida:
+    runs-on: ubuntu-latest
+    name: Despedirse
+    steps:
+      - name: Despedida sencilla
+        run: echo "Adios NOC 2"
+  
